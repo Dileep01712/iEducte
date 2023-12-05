@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <title>iEducate - Transforming Online Education</title>
+</head>
+
+<body>
+    <nav class="navbar background h-nav-resp">
+        <div id="logo">
+            <img src="../img/logo.webp" alt="Image Not Found!!">
+        </div>
+        <ul class="nav-list v-class-resp">
+            <li><a href="#">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="rightNav">
+            <input type="text" name="search" id="search">
+            <button class="btn-search">Search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <section class="background firstSection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <p class="text-big">The Future of Education is Here</p>
+                <p class="text-small">
+                    In this world of 7 billion people, we need to educate every single one of them. This represents the
+                    future of a well-educated world, and we take immense pride in proclaiming that the Future of
+                    Education has arrived.
+                </p>
+                <div class="buttons">
+                    <button class="btn-center">Subscribe</button>
+                    <button class="btn-center">Watch Video</button>
+                </div>
+            </div>
+
+            <div class="secondHalf">
+                <img src="../img/logo1.webp" alt="Laptop Image">
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="paras">
+            <p class="sectionTag text-big">The End of Your Search is Here</p>
+            <p class="sectionSubTag text-small">
+                Education is the process of facilitating learning and the acquisition of knowledge, skills, values,
+                beliefs, and habits. Educational methods encompass teaching, training, storytelling, discussion, and
+                directed research. Education often occurs under the guidance of educators, but learners can also engage
+                in self-education. Education can occur in formal or informal settings, and any experience that has a
+                formative effect on the way one thinks, feels, or acts may be considered educational. The methodology of
+                teaching in Zambia is referred to as pedagogy.
+            </p>
+        </div>
+        <div class="thumbnail">
+            <img src="https://source.unsplash.com/900x900/?books" alt="Thumbnail" class="imgFluid">
+        </div>
+    </section>
+
+    <section class="section section-left" id="about">
+        <div class="paras">
+            <p class="sectionTag text-big">Transforming Education in India</p>
+            <p class="sectionSubTag text-small">
+                The transformation of education in India is a comprehensive effort focused on improving the quality,
+                accessibility, and inclusivity of learning opportunities throughout the country. Key initiatives and
+                reforms have been implemented to address challenges in the education system.
+
+                Digital learning and technology integration in classrooms play a significant role in this
+                transformation. The National Education Policy (NEP) of 2020 underscores the importance of technology for
+                personalized and flexible learning experiences, aiming to equip students with 21st-century skills to
+                navigate a rapidly changing global landscape.
+            </p>
+        </div>
+        <div class="thumbnail">
+            <img src="https://source.unsplash.com/900x900/?laptop" alt="Thumbnail" class="imgFluid">
+        </div>
+    </section>
+    <section class="section" id="services">
+        <div class="paras">
+            <p class="sectionTag text-big">Let's Grow Together</p>
+            <p class="sectionSubTag text-small">
+                The journey of education began in prehistoric times, marked by the transfer of knowledge and skills from
+                adults to the younger generation. In preliterate societies, education primarily relied on oral
+                communication and imitation, with storytelling playing a pivotal role in transmitting knowledge, values,
+                and skills across generations.
+                As societies progressed, formal education systems started to develop. An accurate point mentions the
+                establishment of schools in Egypt during the Middle Kingdom period. However, the transition to this
+                historical fact feels abrupt, necessitating additional context to maintain a cohesive narrative.
+            </p>
+            <p class="sectionSubTag text-small">
+                Another critical aspect of the transformation is the emphasis on skill development and vocational
+                training. The objective is to align education with the demands of the job market, fostering practical
+                skills and entrepreneurship. This not only enhances employability but also contributes to the economic
+                growth of the nation.
+            </p>
+        </div>
+        <div class="thumbnail">
+            <img src="https://source.unsplash.com/900x900/?books, pen, notebook" alt="laptop image" class="imgFluid">
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h1 class="text-center">Contact Us</h1>
+        <div class="form">
+            <input class="form-input" type="text" name="name" id="name" placeholder="Name">
+            <input class="form-input" type="text" name="phone" id="phone" placeholder="Phone">
+            <input class="form-input" type="email" name="email" id="email" placeholder="Email">
+            <textarea class="form-input" name="text" id="text" cols="30" rows="10"
+                placeholder="Elaborate Your Concern"></textarea>
+            <div class="btn-submit">
+                <button class="btn-Submit">Submit</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="background">
+        <p class="text-footer">
+            Copyright &copy; 2025 iEducate | All Rights Reserved.
+        </p>
+    </footer>
+
+    <script src="../js/resp.js"></script>
+
+    <script>
+        var placeholders = [
+            "Search For Subjects",
+            "Search For Courses",
+            "Search For Tutorials",
+            "Search For Educational Resources"
+        ];
+        var currentPlaceholderIndex = 0;
+
+        function updatePlaceholder() {
+            var searchBox = document.getElementById("search");
+            searchBox.placeholder = placeholders[currentPlaceholderIndex];
+            currentPlaceholderIndex = (currentPlaceholderIndex + 1) % placeholders.length;
+        }
+        setInterval(updatePlaceholder, 3000);
+    </script>
+</body>
+
+</html>
